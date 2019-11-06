@@ -1,3 +1,4 @@
+/* ===Navbar=== */
 ul {
   list-style: none;
 }
@@ -5,54 +6,6 @@ ul {
 a {
   font-size: 13px;
   color: #000;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col {
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
 }
 
 .icon {
@@ -107,4 +60,95 @@ ul li {
 
 .m-t-16 {
   margin-top: 16px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* ===Main=== */
+
+main + div {
+  padding-top: 109px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+nav + main {
+  margin-top: 110px;
+}
+
+/* ===Search Bar=== */
+.search-bar {
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  width: 482px;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-icon {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.fa-search {
+  color: #9AA0A6;
+  font-size: 15px;
 }
