@@ -4,8 +4,18 @@ ul {
 }
 
 a {
-  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+nav ul li a {
   color: #000;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon {
@@ -44,13 +54,13 @@ a {
   justify-content: space-between;
 }
 
-ul:first-of-type {
+.first-navbar-group {
   opacity: 0.75;
   margin: 7px 0 0 10px;
   padding: 0;
 }
 
-ul:last-of-type {
+.last-navbar-group {
   padding: 0 30px 0 30px;
 }
 
@@ -150,5 +160,57 @@ nav + main {
 
 .fa-search {
   color: #9AA0A6;
-  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* ===Buttons=== */
+button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+
+  margin: 11px 4px;
+  padding: 0 16px;
+}
+
+button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0, 0.1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+.p-t-18 {
+  padding-top: 18px;
+}
+
+/* ===Footer=== */
+footer {
+  background: #f2f2f2;
+  line-height: 2.5rem;
+  border-top: 1px solid #e4e4e4;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+footer ul li {
+  padding-left: 27px;
+}
+
+footer ul li a{
+  color: #5f6368;
+}
+
+.m-r-30 {
+  margin-right: 30px;
 }
