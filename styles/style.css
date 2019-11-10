@@ -7,6 +7,10 @@ a {
   font-size: 0.8125rem;
 }
 
+nav ul {
+  margin-bottom: 0;
+}
+
 nav ul li a {
   color: #000;
 }
@@ -16,6 +20,14 @@ nav ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.m-t-7 {
+  margin-top: 7px;
+}
+
+.p-t-7 {
+  padding-top: 7px;
 }
 
 .icon {
@@ -56,12 +68,12 @@ nav ul li a {
 
 .first-navbar-group {
   opacity: 0.75;
-  margin: 7px 0 0 10px;
+  margin-left: 10px;
   padding: 0;
 }
 
 .last-navbar-group {
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
 }
 
 ul li {
@@ -81,10 +93,6 @@ ul li {
 }
 
 /* ===Main=== */
-
-main + div {
-  padding-top: 109px;
-}
 
 .container {
   width: 100%;
@@ -135,11 +143,17 @@ main + div {
 }
 
 nav + main {
-  margin-top: 110px;
+  margin-top: 150px;
 }
 
 /* ===Search Bar=== */
+
+.m-t-25 {
+  margin-top: 25px;
+}
+
 .search-bar {
+  background-color: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   height: 44px;
